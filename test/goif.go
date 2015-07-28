@@ -6,7 +6,7 @@ import (
 )
 
 func sqrt(x float64) string {
-	if x < 4 {
+	if x < 4 { // using 1 rather than 4 solve the stackoverflow
 		return sqrt(-x) + "i"
 	}
 	return fmt.Sprint(math.Sqrt(x))
