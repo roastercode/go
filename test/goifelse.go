@@ -19,9 +19,8 @@ func meow(x, n, lemon float64) float64 {
 		return v
 	} else {
 		fmt.Printf("%g >= %g\n", v, lemon)
+		return lemon
 	}
-	// can't use v here, though
-	return lemon
 }
 
 func main() {
