@@ -15,13 +15,15 @@ import (
 	"runtime"
 )
 
+// Introduction to import runtime
+
 func main() {
 	fmt.Print("Go run on ")
 	switch os := runtime.GOOS; os {
 	case "darwin":
 		fmt.Println("OS X.")
 	case "linux":
-		fmt.Println("Linux.")
+		fmt.Println("GNU / Linux.")
 	case "freebsd":
 		fmt.Println("FreeBSD.")
 	case "openbsd":
