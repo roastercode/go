@@ -18,7 +18,7 @@ import (
 )
 
 func main() {
-	defer fmt.Printf("\nHello World!\n\n")
+	defer fmt.Printf("Hello World!\n\n")
 
 var (
 	a        bool
@@ -26,7 +26,7 @@ var (
 	z        complex128 = cmplx.Sqrt(-5 +12i)
 )
 
-	const f = "%T(%v)\n"
+	const f = "\n%T(%v)\n"
 	fmt.Printf(f, a, a)
 	fmt.Printf(f, MaxInt, MaxInt)
 	fmt.Printf(f, z, z)
