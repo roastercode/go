@@ -21,6 +21,7 @@ func meow(x, n, lemon float64) float64 {
 		fmt.Printf("%g >= %g\n", v, lemon)
 		return lemon
 	}
+	// include the returns in both { }
 }
 
 func main() {
