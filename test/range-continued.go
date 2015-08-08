@@ -18,6 +18,7 @@ func main() {
 		pow[i] = 1 << uint(i)
 	}
 	for _, value := range pow {
-		fmt.Printf("%d\n", value)
+		fmt.Printf("%d > ", value)
+		fmt.Printf("%q\n", value)
 	}
 }
