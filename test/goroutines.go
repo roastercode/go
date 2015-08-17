@@ -28,7 +28,7 @@ import (
 
 func say(s string) {
 	for i := 0; i < 5; i++ {
-		time.Sleep(100 * time.Millisecond)
+		time.Sleep(1 * time.Nanosecond)
 		fmt.Println(s)
 	}
 }
