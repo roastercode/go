@@ -55,6 +55,7 @@ func Crawl(url string, depth int, fetch Fetcher) {
 func main() {
 	store = make(map[string]bool)
 	Crawl("http://golang.org/", 4, fetcher)
+	Crawl("http://blog.golang.org/",1, fetcher)
 }
 
 
@@ -103,6 +104,12 @@ var fetcher = &fakeFetcher{
 		[]string{
 			"http://golang.org/",
 			"http://golang.org/pkg/",
+		},
+	},
+	"http://blog.golang.org/": &fakeResult{
+		"Blog",
+		[]string{
+			"http://blog.golang.org/",
 		},
 	},
 }
