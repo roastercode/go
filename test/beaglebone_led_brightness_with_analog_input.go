@@ -1,3 +1,14 @@
+/*
+
+BeagleBone Black Led Brightness with Analog Input
+beaglebone_led_brightness_with_analog_input.go
+
+From GoBot.io
+
+Rewrite and use remotly on a local BBB
+
+*/
+
 package main
 
 import (
