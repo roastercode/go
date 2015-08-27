@@ -17,7 +17,7 @@ import (
 func main() {
 	gbot := gobot.NewGobot()
 	beagleboneAdaptor := beaglebone.NewBeagleboneAdaptor("beaglebone")
-	led := gpio.NewLedDriver(beagleboneAdaptor, "led", "p9_16")
+	led := gpio.NewLedDriver(beagleboneAdaptor, "led", "P9_14")
 
 	work := func() {
 		brightness := uint8(0)
