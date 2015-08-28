@@ -12,7 +12,7 @@ func main() {
 	gbot := gobot.NewGobot()
 
 	beagleboneAdaptor := beaglebone.NewBeagleboneAdaptor("beaglebone")
-	led := gpio.NewLedDriver(beagleboneAdaptor, "led", "P9_12")
+	led := gpio.NewLedDriver(beagleboneAdaptor, "led", "P9_14")
 
 	work := func() {
 		gobot.Every(1*time.Second, func() {
