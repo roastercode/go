@@ -1,0 +1,25 @@
+package main
+
+import (
+	"fmt"
+)
+
+func zero(xPtr int) { // The * create the pointer
+	fmt.Println(xPtr)
+	*xPtr = 0
+}
+
+func bubble(yBubble *float64) {
+	*yBubble = 10.53
+}
+
+func main() {
+	x := 5
+	zero(&x)
+	fmt.Println(&x)
+	fmt.Println(x) // x is 0
+
+	y := 2.12
+	bubble(&y)
+	fmt.Println(y)
+}

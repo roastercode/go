@@ -1,0 +1,11 @@
+func mapper() {
+		// Map of string
+	var code string
+	fmt.Scanln("give me a state code please:", &code)
+
+	states := map[string]string{
+		"CA": "California",
+		"NE": "Nevada",
+	}
+	fmt.Println(states[code])
+}

@@ -1,0 +1,21 @@
+package main
+
+import (
+	"os"
+	"fmt"
+	"strings"
+)
+func main() {
+	
+	// load from the terminal after a go build ; go install
+	// slice 2mi km
+
+	from := os.Args[1]
+	to := os.Args[2]
+
+	switch {
+	case strings.HasSuffix(from, "mi"):
+		fmt.Println("From Miles")
+	}
+	fmt.Println(from, to)
+}

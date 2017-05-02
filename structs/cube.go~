@@ -1,0 +1,18 @@
+package main
+
+import "fmt"
+
+func (h *Cube) space() int {
+	return h.u * h.u * h.u
+}
+
+func main() {
+	h := Cube {
+		u: 10,
+	}
+	fmt.Println(h.space())
+
+	h := Cube {
+		u: 100,
+	}
+}
