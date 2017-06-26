@@ -1,5 +1,5 @@
 /*
-Golang - Arrays v1
+Golang - Pointers v2
 License    : GNU GPL v3 or later
 Author     : Aurélien DESBRIERES
 Mail       : aurelien@hackers.camp
@@ -15,15 +15,7 @@ package main
 import "fmt"
 
 func main() {
-	var n [10]int /* n is an array of 10 integers */
-	var i,j int
+	var ptr *int
 
-	/* initialize elements of array n to 0 */
-	for i = 0; i < 10; i++ {
-		n[i] = i + 100    // Set element at location i to i + 100
-	}
-
-	// Output each element's value
-	for j = 0; j < 10; j++ {
-		fmt.Printf("Element[%d] = %d\n", j, n[j] )
-	}
+	fmt.Printf("The value of ptr is : %x\n", ptr )
+}

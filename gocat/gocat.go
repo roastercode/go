@@ -21,7 +21,7 @@ os.Args[0] == gocat (so we do not use 0 that call for the name of the program it
 os.Args[1] == filename (1 call for the filename in every sort of directory you tell
 
 */
-	
+
 	f, err := os.Open(os.Args[1]) // Open the file
 	if err != nil {
 		log.Fatalln("my program broken")
@@ -36,5 +36,4 @@ os.Args[1] == filename (1 call for the filename in every sort of directory you t
 	
 
 	fmt.Printf("%s", bs) // %s convert directly in string the result
-
 }
